@@ -2,12 +2,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 choco install miniconda3 --params="'/AddToPath:1'" -y
 
-conda create -n saad python=3.7
+conda create -n dev1 python=3.7
 
-conda activate saad
+conda activate dev1
 
 conda install ipykernel jupyter
 
-python -m ipykernel install --user --name saad
+python -m ipykernel install --user --name dev1
 
 jupyter notebook
